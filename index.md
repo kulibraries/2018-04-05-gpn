@@ -467,7 +467,7 @@ eventbrite:           # optional: alphanumeric key for Eventbrite registration, 
       <h4 id="editor-windows">Windows</h4>
       <a href="https://www.youtube.com/watch?v=339AEqk9c-8">Video Tutorial</a>
       <p>
-        nano is a basic editor and the default that instructors use in the workshop.
+        nano is a basic editor and the default that instructors use in the workshop. If you have installed Git for Windows version 2.15.1.2 as part of the Bash Shell setup (above), you do not need to install nano separately.
         For Git for Windows versions older than 2.15.1.2, install nano by
         downloading the <a href="{{site.swc_installer}}">
           {% if page.carpentry == "swc" %}
