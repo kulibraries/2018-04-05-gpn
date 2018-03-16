@@ -304,40 +304,52 @@ eventbrite:           # optional: alphanumeric key for Eventbrite registration, 
       <h4 id="shell-windows">Windows</h4>
       <a href="https://www.youtube.com/watch?v=339AEqk9c-8">Video Tutorial</a>
       <ol>
-        <li>Download the Git for Windows <a href="https://git-for-windows.github.io/">installer</a>.</li>
-        <li>Run the installer and follow the steps bellow:
+        <li>Download the Git for Windows <a href="http://gitforwindows.org/">installer</a>.</li>
+        <li>Run the installer and follow the steps below:
           <ol>
-            {% comment %} Git 2.8.2 Setup {% endcomment %}
-            {% comment %} Information {% endcomment %}
+            <!-- Git 2.15.1.2 Setup -->
+            <!-- Information -->
             <li>Click on "Next".</li>
-            {% comment %} Select Components {% endcomment %}
+            <!-- Select Destination -->
             <li>Click on "Next".</li>
-            {% comment %} Adjusting your PATH environment {% endcomment %}
+            <!-- Select Components -->
+            <li>Click on "Next".</li>
+            <!-- Select Start Menu Folder -->
+            <li>Click on "Next".</li>
+            <!-- Choosing the default editor -->
+            <li>
+              <strong>
+                Choose "Use the Nano editor by default" and click on "Next".
+              </strong>
+            </li>
+            <!-- Adjusting your PATH environment -->
             <li>
               <strong>
                 Keep "Use Git from the Windows Command Prompt" selected and click on "Next".
               </strong>
-                If you forgot to do this programs that you need for the workshop will not work properly.
-                If this happens rerun the installer and select the appropriate option.
+                If you make a different selection, the programs that you need for the workshop will not work properly.
+                If this happens rerun the installer and keep the default choice selected.
             </li>
-            {% comment %} Choosing the SSH executable {% endcomment %}
+            <!-- Choosing the SSH executable -->
             <li>Click on "Next".</li>
-            {% comment %} Configuring the line ending conversions {% endcomment %}
+            <!-- Choose HTTPS transport -->
+            <li>Click on "Next".</li>
+            <!-- Configuring the line ending conversions -->
             <li>
               <strong>
                 Keep "Checkout Windows-style, commit Unix-style line endings" selected and click on "Next".
               </strong>
             </li>
-            {% comment %} Configuring the terminal emulator to use with Git Bash {% endcomment %}
+            <!-- Configuring the terminal emulator to use with Git Bash -->
             <li>
               <strong>
-                Keep "Use Windows' default console window" selected and click on "Next".
+                Choose "Use Windows' default console window" and click on "Next".
               </strong>
             </li>
-            {% comment %} Configuring experimental performance tweaks {% endcomment %}
-            <li>Click on "Install".</li>
-            {% comment %} Installing {% endcomment %}
-            {% comment %} Completing the Git Setup Wizard {% endcomment %}
+            <!-- Configuring extra options -->
+            <li>Click on "Install"</li>
+            <!-- Installing -->
+            <!-- Completing the Git Setup Wizard -->
             <li>Click on "Finish".</li>
           </ol>
         </li>
@@ -456,8 +468,8 @@ eventbrite:           # optional: alphanumeric key for Eventbrite registration, 
       <a href="https://www.youtube.com/watch?v=339AEqk9c-8">Video Tutorial</a>
       <p>
         nano is a basic editor and the default that instructors use in the workshop.
-        To install it,
-        download the <a href="{{site.swc_installer}}">
+        For Git for Windows versions older than 2.15.1.2, install nano by
+        downloading the <a href="{{site.swc_installer}}">
           {% if page.carpentry == "swc" %}
           Software Carpentry
           {% elsif page.carpentry == "dc" %}
@@ -466,13 +478,14 @@ eventbrite:           # optional: alphanumeric key for Eventbrite registration, 
           Library Carpentry
           {% endif %}
           Windows installer
-	</a>
-        and double click on the file to run it.
+	</a>.
+        Double click on the file to run it.
         <strong>This installer requires an active internet connection.</strong>
       </p>
       <p>
         Others editors that you can use are
-        <a href="http://notepad-plus-plus.org/">Notepad++</a> or
+        <a href="http://notepad-plus-plus.org/">Notepad++</a>,
+        <a href="http://atom.io/">Atom</a>, or
         <a href="http://www.sublimetext.com/">Sublime Text</a>.
         <strong>Be aware that you must
           add its installation directory to your system path.</strong>
@@ -489,7 +502,7 @@ eventbrite:           # optional: alphanumeric key for Eventbrite registration, 
       </p>
       <p>
         Others editors that you can use are
-        <a href="http://www.barebones.com/products/textwrangler/">Text Wrangler</a> or
+        <a href="http://atom.io/">Atom</a> or
         <a href="http://www.sublimetext.com/">Sublime Text</a>.
       </p>
     </div>
@@ -547,7 +560,7 @@ eventbrite:           # optional: alphanumeric key for Eventbrite registration, 
       <ol>
         <li>Open <a href="https://www.anaconda.com/download/#windows">https://www.anaconda.com/download/#windows</a> with your web browser.</li>
         <li>Download the Python 3 installer for Windows.</li>
-        <li>Install Python 3 using all of the defaults for installation <em>except</em> make sure to check <strong>Make Anaconda the default Python</strong>.</li>
+        <li>Install Python 3 using all of the defaults for installation. Make sure to keep checked <strong>Register Anaconda as my default Python</strong> in the Advanced Options.</li>
       </ol>
     </div>
     <div class="col-md-4">
